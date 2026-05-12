@@ -54,6 +54,9 @@ make
 │   └── Contents
 ├── main
 ├── main.cpp
+├── pulse_train_generator_test.cpp
+├── pulse_train_generator.cpp
+├── pulse_train_generator.h
 ├── README.md
 ├── ring_buffer_test.cpp
 ├── ring_buffer.cpp
