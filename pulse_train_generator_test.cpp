@@ -2,7 +2,8 @@
 #include "pulse_train_generator.h"
 
 TEST(PulseTrainGeneratorTest, GeneratesCorrectPulseCount) {
-    PulseParameters params{1e6, 1e-6, 10e-6, 1.0, 5}; // 1MHz, 1us PW, 10us PRI, 5 pulses
+    // 1MHz SR, 1us PW, 10us PRI, amplitude 1.0, 5 pulses
+    PulseParameters params{1e6, 1e-6, 10e-6, 1.0, 5};
     PulseTrainGenerator gen(params);
     auto signal = gen.generate();
 
