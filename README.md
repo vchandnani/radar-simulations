@@ -1,10 +1,12 @@
 # Radar Simulations
 
-Technology Playground: C++ Templated Ring Buffer Implementation
+Technology Playground: C++
+1. Templated Ring Buffer Implementation
+2. Pulse Train Generator Implementation
 
 ## Features
-1. Templated for any type T
-2. Real-Time push, pop, capacity, size and empty/full checks.
+1. Templated Ring Buffer: Templated for any type T. Real-Time push, pop, capacity, size and empty/full checks.
+2. Pulse Train Generator: Creates samples for radar pulse trains with configurable pulse width (PW), pulse repetition interval (PRI), and amplitude.
 
 ## High-Level Design
 
