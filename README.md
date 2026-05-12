@@ -62,7 +62,11 @@ make
 
 ## Debug Hard
 
-1. Broken download links or archive format inconsistencies.
+1. Template Class Implementation
+
+For template classes, the implementation must be in the header file, or explicitly instantiated in the .cpp file. Move the implementation into the header file or add ```#include "CLASS-NAME.cpp"``` at the end of the header file.
+
+2. Broken Download Links or Archive Format Inconsistencies
 
 ```bash
 FetchContent_Declare(
