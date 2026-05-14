@@ -3,10 +3,12 @@
 Technology Playground: C++
 1. Templated Ring Buffer Implementation
 2. Pulse Train Generator Implementation
+3. Thread-safe Queue with Condition Variables
 
 ## Features
 1. Templated Ring Buffer: Templated for any type T. Real-Time push, pop, capacity, size and empty/full checks.
 2. Pulse Train Generator: Creates samples for radar pulse trains with configurable pulse width (PW), pulse repetition interval (PRI), and amplitude.
+3. Thread-safe Queue: Producer thread adds values to the queue at specified interval, and consumer thread retrieves them as they become available.
 
 ## High-Level Design
 
@@ -40,29 +42,32 @@ make
 ```text
 .
 ├── build
-│   ├── _deps
-│   ├── bin
-│   ├── cmake_install.cmake
-│   ├── CMakeCache.txt
-│   ├── CMakeFiles
-│   ├── CTestTestfile.cmake
-│   ├── lib
-│   ├── Makefile
-│   └── run_tests
+│   ├── _deps
+│   ├── bin
+│   ├── cmake_install.cmake
+│   ├── CMakeCache.txt
+│   ├── CMakeFiles
+│   ├── CTestTestfile.cmake
+│   ├── lib
+│   ├── Makefile
+│   └── run_tests
 ├── CMakeLists.txt
 ├── helloworld
 ├── helloworld.cpp
 ├── helloworld.dSYM
-│   └── Contents
-├── main
+│   └── Contents
+├── main_tsq.cpp
+├── main_tsq.exe
 ├── main.cpp
+├── main.exe
 ├── pulse_train_generator_test.cpp
 ├── pulse_train_generator.cpp
 ├── pulse_train_generator.h
 ├── README.md
 ├── ring_buffer_test.cpp
 ├── ring_buffer.cpp
-└── ring_buffer.h
+├── ring_buffer.h
+└── threadsafe_queue.cpp
 ```
 
 ## Debug Hard
