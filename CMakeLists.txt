@@ -17,5 +17,6 @@ enable_testing()
 add_executable(run_tests
   ring_buffer_test.cpp
   pulse_train_generator_test.cpp
+  threadsafe_queue_test.cpp
   )
 target_link_libraries(run_tests GTest::gtest_main)
