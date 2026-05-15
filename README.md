@@ -52,11 +52,9 @@ make
 │   ├── Makefile
 │   └── run_tests
 ├── CMakeLists.txt
-├── helloworld
-├── helloworld.cpp
 ├── helloworld.dSYM
 │   └── Contents
-├── main_tsq.cpp
+├── main
 ├── main_tsq.exe
 ├── main.cpp
 ├── main.exe
@@ -67,6 +65,7 @@ make
 ├── ring_buffer_test.cpp
 ├── ring_buffer.cpp
 ├── ring_buffer.h
+├── threadsafe_queue_test.cpp
 └── threadsafe_queue.cpp
 ```
 
